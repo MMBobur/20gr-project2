@@ -1,6 +1,6 @@
 {/* import NAVBAR */}
 {/* import BANNER */}
-{/* import ABOUT US */}
+import About from "./pages/About";
 {/* import OUR CLIENTS */}
 {/* import SERVICES */}
 {/* import PORTFOLIO */}
@@ -13,7 +13,7 @@ function App() {
     <>
       {/* NAVBAR */}
       {/* BANNER */}
-      {/* ABOUT US */}
+      <About/>
       {/* OUR CLIENTS */}
       {/* SERVICES */}
       {/* PORTFOLIO */}
