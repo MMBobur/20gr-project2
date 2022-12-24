@@ -3,7 +3,7 @@
 import About from "./pages/About";
 {/* import OUR CLIENTS */}
 {/* import SERVICES */}
-{/* import PORTFOLIO */}
+import Portfolio from "./pages/Portfolio";
 {/* import TEAM */}
 {/* import CONTACT */}
 {/* import FOOTER */}
@@ -16,7 +16,7 @@ function App() {
       <About/>
       {/* OUR CLIENTS */}
       {/* SERVICES */}
-      {/* PORTFOLIO */}
+      <Portfolio/>
       {/* TEAM */}
       {/* CONTACT */}
       {/* FOOTER */}
