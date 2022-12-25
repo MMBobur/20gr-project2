@@ -1,20 +1,12 @@
-{/* import NAVBAR */}
-{/* import BANNER */}
-{/* import ABOUT US */}
-{/* import OUR CLIENTS */}
-{/* import SERVICES */}
-{/* import PORTFOLIO */}
-{/* import TEAM */}
-{/* import CONTACT */}
-{/* import FOOTER */}
-
+import Our from "./our";
+// import Team from "./team"
 function App() {
   return (
     <>
-      {/* NAVBAR */}
       {/* BANNER */}
       {/* ABOUT US */}
-      {/* OUR CLIENTS */}
+      <Our />
+      {/* <Team /> */}
       {/* SERVICES */}
       {/* PORTFOLIO */}
       {/* TEAM */}
