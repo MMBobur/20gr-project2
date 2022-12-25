@@ -1,12 +1,12 @@
 import Our from "./our";
-// import Team from "./team"
+import Team from "./team"
 function App() {
   return (
     <>
       {/* BANNER */}
       {/* ABOUT US */}
       <Our />
-      {/* <Team /> */}
+      <Team />
       {/* SERVICES */}
       {/* PORTFOLIO */}
       {/* TEAM */}
