@@ -1,5 +1,5 @@
+import BANNER from "./Asilbek/BANNER/BANNER";
 {/* import NAVBAR */}
-{/* import BANNER */}
 {/* import ABOUT US */}
 {/* import OUR CLIENTS */}
 {/* import SERVICES */}
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       {/* NAVBAR */}
-      {/* BANNER */}
+      <BANNER />
       {/* ABOUT US */}
       {/* OUR CLIENTS */}
       {/* SERVICES */}
