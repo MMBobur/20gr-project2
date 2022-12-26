@@ -1,5 +1,15 @@
+
 import Our from "./our";
-// import Team from "./team"
+{/* import NAVBAR */}
+{/* import BANNER */}
+import About from "./pages/About";
+{/* import OUR CLIENTS */}
+{/* import SERVICES */}
+import Portfolio from "./pages/Portfolio";
+{/* import TEAM */}
+{/* import CONTACT */}
+import Footer from "./pages/Footer";
+
 function App() {
   return (
     <>
@@ -8,10 +18,10 @@ function App() {
       <Our />
       {/* <Team /> */}
       {/* SERVICES */}
-      {/* PORTFOLIO */}
+      <Portfolio/>
       {/* TEAM */}
       {/* CONTACT */}
-      {/* FOOTER */}
+      <Footer/>
     </>
   );
 }
