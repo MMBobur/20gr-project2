@@ -1,3 +1,5 @@
+
+import Our from "./our";
 {/* import NAVBAR */}
 {/* import BANNER */}
 import About from "./pages/About";
@@ -11,10 +13,10 @@ import Footer from "./pages/Footer";
 function App() {
   return (
     <>
-      {/* NAVBAR */}
       {/* BANNER */}
-      <About/>
-      {/* OUR CLIENTS */}
+      {/* ABOUT US */}
+      <Our />
+      {/* <Team /> */}
       {/* SERVICES */}
       <Portfolio/>
       {/* TEAM */}
