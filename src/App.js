@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 {/* import TEAM */}
 {/* import CONTACT */}
-{/* import FOOTER */}
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Portfolio/>
       {/* TEAM */}
       {/* CONTACT */}
-      {/* FOOTER */}
+      <Footer/>
     </>
   );
 }
