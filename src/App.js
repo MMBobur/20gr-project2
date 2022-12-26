@@ -1,5 +1,8 @@
 
 import Our from "./our";
+
+import Team from "./team"
+
 {/* import NAVBAR */}
 {/* import BANNER */}
 import About from "./pages/About";
@@ -16,7 +19,7 @@ function App() {
       {/* BANNER */}
       {/* ABOUT US */}
       <Our />
-      {/* <Team /> */}
+      <Team />
       {/* SERVICES */}
       <Portfolio/>
       {/* TEAM */}
