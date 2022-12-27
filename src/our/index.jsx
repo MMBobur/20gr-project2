@@ -44,8 +44,8 @@ function Our() {
 
                 <Box sx={{ mt: "50px", width: "95%" }}>
                     <Carousel breakPoints={breakPoints} enableAutoPlay={true} autoPlaySpeed={3500}  >
-                        {Client.map((v) => (
-                            <Box sx={{ width: "120px", }}>
+                        {Client.map((v,val) => (
+                            <Box key={val} sx={{ width: "120px", }}>
                                 <img src={v.rasm} alt="" style={{ width: "100%" }} />
                             </Box>
                         ))}

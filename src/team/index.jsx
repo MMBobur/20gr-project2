@@ -34,8 +34,8 @@ function Team() {
             <Box sx={{ display: "flex", justifyContent: "center", }}>
                 <Box sx={{ width: "87%", height: "auto", mt: "50px", }}>
                     <Grid container spacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3, }} >
-                        {Teammap.map((v) => (
-                            <Grid item xs={4} gap={2} >
+                        {Teammap.map((v,val) => (
+                            <Grid key={val} item xs={4} gap={2} >
                                 <Box sx={{ width: "97%", height: "100%", background: "white", boxShadow: "0px 0px 12px 0px rgb(34 34 34 / 7%)", display: "flex", }}  >
                                     <Box sx={{
                                         display: "flex",

@@ -34,8 +34,8 @@ function Footer() {
                     margin: "0 0 40px 0",
                 }}>
                     <Grid container justifyContent="center">
-                        {Futlink.map((val) => (
-                            <Grid item >
+                        {Futlink.map((val,v) => (
+                            <Grid item key={v} >
                                 <Link href="#" sx={{
                                     fontSize: "18px",
                                     background: "#5cb874",
