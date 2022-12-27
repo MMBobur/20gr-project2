@@ -1,0 +1,209 @@
+#SerBoshYoz1{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#SerBoshYoz2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#SerBoshYoz3{
+    width: 40px;
+    height: 1px;
+    background: rgb(221, 221, 221);
+}
+#SerBoshYoz4{
+    width: 40px;
+    height: 3px;
+    background: rgb(92, 184, 116);
+    margin-top: -1px;
+}
+#SerBoshYoz5{
+    width: 40px;
+    height: 1px;
+    background: rgb(221, 221, 221);
+}
+#SerBoshYoz6{
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+    text-align: center;
+    margin-bottom: 30px;
+}
+#SerTortBosh1{
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
+}
+#SerTortBosh2{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    color: #47aeff;
+}
+#SerTortBosh3{
+    font-size: 36px;
+    transition: 0.5s;
+    position: absolute;
+}
+#SerTortBosh4{
+    transition: 0.5s;
+}
+#SerTortBosh4:hover{
+    fill: #47aeff;
+}
+#SerTortBosh2:hover{
+    color: #fff;
+}
+#SerTortBosh5{
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+}
+#SerTortBosh6{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+#SerTortBosh7:hover{
+    fill: #ffa76e;
+}
+#SerTortBosh8:hover{
+    fill: #e80368;
+}
+#SerTortBosh9:hover{
+    fill: #ffbb2c;
+}
+#SerTortBosh10:hover{
+    fill: #ff5828;
+}
+#SerTortBosh11:hover{
+    fill: #11dbcf;
+}
+#SerTortBosh77{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    color: #ffa76e;;
+}
+#SerTortBosh88{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    color: #e80368;
+}
+#SerTortBosh99{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    color: #ffbb2c;
+}
+#SerTortBosh100{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    color: #ff5828;
+}
+#SerTortBosh111{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    color: #11dbcf;
+}
+#SerTortBosh77:hover{
+    color: #fff;
+}
+#SerTortBosh88:hover{
+    color: #fff;
+}
+#SerTortBosh99:hover{
+    color: #fff;
+}
+
+#SerTortBosh100:hover{
+    color: #fff;
+}#SerTortBosh111:hover{
+    color: #fff;
+}
+#SerPasJeyYoz1{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+#SerPasJeyYoz2{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 16px;
+    width: 85%;
+
+}
+#SerPasJeyYoz3{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px 30px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    min-width: 170px;
+    cursor: pointer;
+}
+#SerPasJeyYoz3:hover{
+    background: #fff;
+    color: #5cb874;
+}
+@media screen and (max-width:1100px) {
+    #SerPasJeyYoz2{
+        width: 95%;
+    }
+}
+@media screen and (max-width:900px) {
+    #SerPasJeyYoz1{
+        text-align: center;
+    }
+    #SerPasJeyYoz2{
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,4 +1,5 @@
 import BANNER from "./Asilbek/BANNER/BANNER";
+import SERVICES from './Asilbek/SERVICES/SERVICES'
 {/* import NAVBAR */}
 {/* import ABOUT US */}
 {/* import OUR CLIENTS */}
@@ -14,7 +15,7 @@ function App() {
       <BANNER />
       {/* ABOUT US */}
       {/* OUR CLIENTS */}
-      {/* SERVICES */}
+      <SERVICES />
       {/* PORTFOLIO */}
       {/* TEAM */}
       {/* CONTACT */}
