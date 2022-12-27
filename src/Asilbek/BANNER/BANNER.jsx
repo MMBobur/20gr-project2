@@ -2,7 +2,6 @@ import './BANNER.css';
 import { Box, Typography, Link, Grid } from "@mui/material";
 import Carousel from 'react-bootstrap/Carousel';
 import { BsLaptop, BsBriefcase, BsCalendar4Week } from "react-icons/bs";
-import Fade from 'react-reveal/Fade';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function BANNER() {
@@ -19,19 +18,13 @@ function BANNER() {
                             alignItems: 'center'
                         }}>
                             <Box>
-                            <Fade top>
                                 <Typography id='BanCarYoz1'>
                                     Welcome to Green
                                 </Typography>
-                                </Fade>
-                                <Fade bottom>
                                 <Typography id='BanCarYoz2'>
                                     Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
                                 </Typography>
-                                </Fade>
-                                <Fade bottom>
                                 <Link id='BanCarYoz3'>Read More</Link>
-                                </Fade>
                             </Box>
                         </Box>
                     </Box>
@@ -87,9 +80,14 @@ function BANNER() {
                     <Box sx={{
                         padding: { xl: '0 100px', lg: '0 65px', md: '0 35px', sm: '25px' }
                     }}>
-                        <Grid container spacing={0}>
+                        <Grid container >
                             <Grid item xs={12} sm={6} md={4} lg={4} xl={4} sx={{ padding: '0 12px' }}>
-                                <Box sx={{ padding: '20px' }}>
+                                <Box sx={{
+                                     padding: '20px',
+                                     '&:hover':{
+                                        color:'#5cb874'
+                                    }
+                                      }}>
                                     <Box>
                                         <Typography id='BanPasYoz1'>
                                             <BsLaptop />
@@ -104,7 +102,12 @@ function BANNER() {
                                 </Box>
                             </Grid>
                             <Grid item xs={12} sm={6} md={4} lg={4} xl={4} sx={{ padding: '0 12px' }}>
-                                <Box sx={{ padding: '20px' }}>
+                            <Box sx={{
+                                     padding: '20px',
+                                     '&:hover':{
+                                        color:'#5cb874'
+                                    }
+                                      }}>
                                     <Box>
                                         <Typography id='BanPasYoz1'>
                                             <BsBriefcase />
@@ -119,7 +122,12 @@ function BANNER() {
                                 </Box>
                             </Grid>
                             <Grid item xs={12} sm={6} md={4} lg={4} xl={4} sx={{ padding: '0 12px' }}>
-                                <Box sx={{ padding: '20px' }}>
+                            <Box sx={{
+                                     padding: '20px',
+                                     '&:hover':{
+                                        color:'#5cb874'
+                                    }
+                                      }}>
                                     <Box>
                                         <Typography id='BanPasYoz1'>
                                             <BsCalendar4Week />

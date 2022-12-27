@@ -2,7 +2,6 @@ import BANNER from "./Asilbek/BANNER/BANNER";
 {/* import NAVBAR */}
 {/* import ABOUT US */}
 {/* import OUR CLIENTS */}
-{/* import SERVICES */}
 {/* import PORTFOLIO */}
 {/* import TEAM */}
 {/* import CONTACT */}
