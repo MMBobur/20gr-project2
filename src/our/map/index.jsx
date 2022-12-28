@@ -40,37 +40,5 @@ import rasm7 from "../map/client-8.png"
     {
         id:"8",
         rasm:rasm7
-    },
-    {
-        id:"1",
-        rasm:rasm
-    },
-    {
-        id:"2",
-        rasm:rasm1
-    },
-    {
-        id:"3",
-        rasm:rasm2
-    },
-    {
-        id:"4",
-        rasm:rasm3
-    },
-    {
-        id:"5",
-        rasm:rasm4
-    },
-    {
-        id:"6",
-        rasm:rasm5
-    },
-    {
-        id:"7",
-        rasm:rasm6
-    },
-    {
-        id:"8",
-        rasm:rasm7
-    },
+    }
  ]

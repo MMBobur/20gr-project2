@@ -29,7 +29,7 @@ function Portfolio() {
     return (
         <>
             <Box sx={{
-                padding: { xl: "60px 110px", lg: "60px 80px", md: "60px 45px", sm: "60px 35px", xs: "60px 10px" },
+                marginBottom: "50px"
             }} id='portfolio'>
                 <Box>
                     <Box sx={{ justifyContent: "center", display: "flex" }}>
@@ -37,16 +37,16 @@ function Portfolio() {
                             PORTFOLIO
                         </Typography>
                     </Box>
-                    <Box sx={{ justifyContent: "center", display: "flex" }}>
-                        <Typography sx={{ width: "120px", height: "1px", background: "#ddd", position: "absolute" }}></Typography>
+                    <Box sx={{ display: "flex", justifyContent: "center", mb: "30px" }}>
+
+                        <Typography sx={{ width: "120px", height: "2px", background: "#ddd", display: "flex", justifyContent: "center" }}> <Typography sx={{ width: "50px", height: "2px", background: "green", }}></Typography> </Typography>
                     </Box>
-                    <Box sx={{ justifyContent: "center", display: "flex" }}>
-                        <Typography sx={{ width: "40px", height: "3px", background: "#5cb874", position: "absolute", top: "130px" }}></Typography>
-                    </Box>
-                    <Box>
-                        <Typography sx={{ textAlign: "center", m: { lg: "15px 59px", md: "15px 23.5px", sm: "15px 15px", xs: "15px 10px" }, color: "#000", color: "#3A3A3A", }}>
-                            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-                        </Typography>
+                    <Box sx={{ display: "flex", justifyContent: "center", textAlign: "center" }}>
+                        <Box sx={{ width: "87%", height: "auto", }}>
+                            <Typography>
+                                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                            </Typography>
+                        </Box>
                     </Box>
 
                 </Box>
@@ -72,7 +72,7 @@ function Portfolio() {
                                         borderRadius: '3px',
                                         "&:hover": {
                                             color: '#fff !important',
-                                            background: '#5cb874 !important'
+                                            background: '#3b4ef8 !important'
                                         }
                                     }} />
                                     <Tab label="APP" value="2" sx={{
@@ -123,567 +123,1669 @@ function Portfolio() {
                                 </TabList>
                             </Box>
                             <TabPanel value="1">
-                                <Grid container >
-                                    <Grid item xs={12} sm={6} md={12} lg={12} xl={12}>
-                                        <Box sx={{ width: "50%" }}>
+                                <Box>
+                                    <Box sx={{
+                                        padding: { xl: "10px 100px !important", lg: "10px 70px !important", md: "10px 35px !important", sm: "10px 25px !important", xs: "10px 10px " },
+                                    }}>
+                                        <Box>
                                             <Box sx={{
-                                                padding: { xl: "10px 100px !important", lg: "10px 70px !important", md: "10px 35px !important", sm: "10px 25px !important", xs: "10px 10px " },
+                                                display: { xl: 'flex', lg: 'flex', md: 'flex', sm: 'none', xs: 'none', }
                                             }}>
-                                                <Box>
+                                                <Box sx={{
+                                                    width: '100%'
+                                                }}>
                                                     <Box sx={{
-                                                        display: "flex"
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease'
                                                     }}>
                                                         <Box sx={{
-                                                            width: '405px',
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "91%", lg: "90%", md: "86%" },
+                                                            height: { xl: "89%", lg: "89%", md: "85%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
                                                         }}>
-                                                            <Box sx={{
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    App 1
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic'
+                                                                }}>
+                                                                    App
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link href="#" sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box>
+                                                            <img src={ProImg1} className="img-hover-zoom" />
+                                                        </Box>
+                                                    </Box>
+                                                    <Box sx={{
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease',
+                                                        marginTop: '30px'
+                                                    }}>
+                                                        <Box sx={{
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "91%", lg: "90%", md: "86%" },
+                                                            height: { xl: "92%", lg: "93%", md: "90%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
+                                                        }}>
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    App 3
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic',
+                                                                }}>
+                                                                    App
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer',
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box className="img-hover-zoom">
+                                                            <img src={ProImg6} alt="This zooms-in really well and smooth" />
+                                                        </Box>
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    margin: '0px 24px',
+                                                    width: '100%'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease',
+                                                    }}>
+                                                        <Box sx={{
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "91%", lg: "90%", md: "86%" },
+                                                            height: { xl: "84%", lg: "84%", md: "78%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
+                                                        }}>
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    Web 3
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic'
+                                                                }}>
+                                                                    Web
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link href="#" sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link href="details" sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box>
+                                                            <img src={ProImg2} alt="" />
+                                                        </Box>
+                                                    </Box>
+                                                    <Box sx={{
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease',
+                                                        marginTop: '30px'
+                                                    }}>
+                                                        <Box sx={{
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "90%", lg: "90%", md: "86%" },
+                                                            height: { xl: "93%", lg: "93%", md: "90%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
+                                                        }}>
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    Web 2
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic'
+                                                                }}>
+                                                                    Web
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link href="#" sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link href="details" sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box>
+                                                            <img src={ProImg5} alt="" />
+                                                        </Box>
+                                                    </Box>
+                                                    <Box sx={{
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease',
+                                                        marginTop: '30px'
+                                                    }}>
+                                                        <Box className="immm" sx={{
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "91%", lg: "90%", md: "86%" },
+                                                            height: { xl: "84%", lg: "84%", md: "78%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
+                                                        }}>
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    Web 3
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic'
+                                                                }}>
+                                                                    Web
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link href="#" sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link href="details" sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box>
+                                                            <img src={ProImg9} alt="" />
+                                                        </Box>
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    width: '100%'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease',
+                                                    }}>
+                                                        <Box sx={{
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "91%", lg: "90%", md: "86%" },
+                                                            height: { xl: "84%", lg: "84%", md: "78%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
+                                                        }}>
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    App 2
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic'
+                                                                }}>
+                                                                    App
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link href="#" sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link href="details" sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box>
+                                                            <img src={ProImg3} alt="" />
+                                                        </Box>
+                                                    </Box>
+                                                    <Box sx={{
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease',
+                                                        marginTop: '30px'
+                                                    }}>
+                                                        <Box sx={{
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "91%", lg: "90%", md: "86%" },
+                                                            height: { xl: "84%", lg: "84%", md: "78%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
+                                                        }}>
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    Card 2
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic'
+                                                                }}>
+                                                                    Card
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link href="#" sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link href="details" sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box>
+                                                            <img src={ProImg4} alt="" />
+                                                        </Box>
+                                                    </Box>
+                                                    <Box sx={{
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease',
+                                                        marginTop: '30px'
+                                                    }}>
+                                                        <Box sx={{
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "91%", lg: "90%", md: "86%" },
+                                                            height: { xl: "84%", lg: "84%", md: "78%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
+                                                        }}>
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    Card 1
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic'
+                                                                }}>
+                                                                    Card
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link href="#" sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link href="details" sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box>
+                                                            <img src={ProImg7} alt="" />
+                                                        </Box>
+                                                    </Box>
+                                                    <Box sx={{
+                                                        position: 'relative',
+                                                        transition: 'transform .5s ease',
+                                                        marginTop: '30px'
+                                                    }}>
+                                                        <Box sx={{
+                                                            position: 'absolute',
+                                                            padding: '20px',
+                                                            width: { xl: "91%", lg: "90%", md: "86%" },
+                                                            height: { xl: "84%", lg: "84%", md: "78%" },
+                                                            alignItems: 'end',
+                                                            display: 'flex',
+                                                            background: 'rgba(45, 64, 95, 0.6)',
+                                                            opacity: '0',
+                                                            transition: '.5s',
+                                                            "&:hover": {
+                                                                opacity: '1'
+                                                            }
+                                                        }}>
+                                                            <Box>
+                                                                <Typography sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    fontWeight: '600',
+                                                                    fontFamily: '"Krub", sans-serif',
+                                                                    marginBottom: '8px'
+                                                                }}>
+                                                                    Card 3
+                                                                </Typography>
+                                                                <Typography sx={{
+                                                                    color: 'rgba(255, 255, 255, 0.7)',
+                                                                    fontSize: '14px',
+                                                                    textTransform: 'uppercase',
+                                                                    fontStyle: 'italic'
+                                                                }}>
+                                                                    Card
+                                                                </Typography>
+                                                                <Box>
+                                                                    <Link href="#" sx={{
+                                                                        fontSize: '22px',
+                                                                        color: '#fff',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <AiOutlinePlus />
+                                                                    </Link>
+                                                                    <Link href="details" sx={{
+                                                                        fontSize: '20px',
+                                                                        color: '#fff',
+                                                                        marginLeft: '5px',
+                                                                        cursor: 'pointer'
+                                                                    }}>
+                                                                        <FiLink />
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                        <Box>
+                                                            <img src={ProImg8} alt="" />
+                                                        </Box>
+                                                    </Box>
+                                                </Box>
+                                            </Box>
+                                            <Box>
 
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease'
+                                            </Box>
+                                        </Box>
+                                        <Box sx={{
+                                            display: { xl: 'none', lg: 'none', md: 'none', sm: 'flex', xs: 'none', }
+                                        }}>
+                                            <Box sx={{
+                                                width: '100%',
+                                                marginRight: '12px'
+                                            }}>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "87%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
                                                             }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
-                                                                }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            App 1
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic'
-                                                                        }}>
-                                                                            App
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link href="#" sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box>
-                                                                    <img src={ProImg1} className="ddff img-hover-zoom" />
-                                                                </Box>
-                                                            </Box>
-                                                            <Box sx={{
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease',
-                                                                marginTop: '30px'
+                                                                App 1
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
                                                             }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    height: '92%',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
+                                                                App
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
                                                                 }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            App 3
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic',
-                                                                        }}>
-                                                                            App
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer',
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box className="img-hover-zoom">
-                                                                    <img src={ProImg6} alt="This zooms-in really well and smooth" className="ddff" />
-                                                                </Box>
-                                                            </Box>
-                                                        </Box>
-                                                        <Box sx={{
-                                                            margin: '0px 24px',
-                                                            width: '100%'
-                                                        }}>
-                                                            <Box sx={{
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease',
-                                                            }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    height: '83%',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
                                                                 }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            Web 3
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic'
-                                                                        }}>
-                                                                            Web
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link href="#" sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link href="details" sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box>
-                                                                    <img src={ProImg2} alt="" className="ddff" />
-                                                                </Box>
-                                                            </Box>
-                                                            <Box sx={{
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease',
-                                                                marginTop: '30px'
-                                                            }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    height: '92%',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
-                                                                }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            Web 2
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic'
-                                                                        }}>
-                                                                            Web
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link href="#" sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link href="details" sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box>
-                                                                    <img src={ProImg5} alt="" className="ddff" />
-                                                                </Box>
-                                                            </Box>
-                                                            <Box sx={{
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease',
-                                                                marginTop: '30px'
-                                                            }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    height: '84%',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
-                                                                }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            Web 3
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic'
-                                                                        }}>
-                                                                            Web
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link href="#" sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link href="details" sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box>
-                                                                    <img src={ProImg9} alt="" className="ddff" />
-                                                                </Box>
-                                                            </Box>
-                                                        </Box>
-                                                        <Box sx={{
-                                                            width: '100%'
-                                                        }}>
-                                                            <Box sx={{
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease',
-                                                            }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    height: '81%',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
-                                                                }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            App 2
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic'
-                                                                        }}>
-                                                                            App
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link href="#" sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link href="details" sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box>
-                                                                    <img src={ProImg3} alt="" className="ddff" />
-                                                                </Box>
-                                                            </Box>
-                                                            <Box sx={{
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease',
-                                                                marginTop: '30px'
-                                                            }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    height: '83%',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
-                                                                }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            Card 2
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic'
-                                                                        }}>
-                                                                            Card
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link href="#" sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link href="details" sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box>
-                                                                    <img src={ProImg4} alt="" className="ddff" />
-                                                                </Box>
-                                                            </Box>
-                                                            <Box sx={{
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease',
-                                                                marginTop: '30px'
-                                                            }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    height: '83%',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
-                                                                }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            Card 1
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic'
-                                                                        }}>
-                                                                            Card
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link href="#" sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link href="details" sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box>
-                                                                    <img src={ProImg7} alt="" className="ddff" />
-                                                                </Box>
-                                                            </Box>
-                                                            <Box sx={{
-                                                                position: 'relative',
-                                                                transition: 'transform .5s ease',
-                                                                marginTop: '30px'
-                                                            }}>
-                                                                <Box className="dddd" sx={{
-                                                                    position: 'absolute',
-                                                                    padding: '20px',
-                                                                    height: '83%',
-                                                                    alignItems: 'end',
-                                                                    display: 'flex',
-                                                                    background: 'rgba(45, 64, 95, 0.6)',
-                                                                    opacity: '0',
-                                                                    transition: '.5s',
-                                                                    "&:hover": {
-                                                                        opacity: '1'
-                                                                    }
-                                                                }}>
-                                                                    <Box>
-                                                                        <Typography sx={{
-                                                                            fontSize: '20px',
-                                                                            color: '#fff',
-                                                                            fontWeight: '600',
-                                                                            fontFamily: '"Krub", sans-serif',
-                                                                            marginBottom: '8px'
-                                                                        }}>
-                                                                            Card 3
-                                                                        </Typography>
-                                                                        <Typography sx={{
-                                                                            color: 'rgba(255, 255, 255, 0.7)',
-                                                                            fontSize: '14px',
-                                                                            textTransform: 'uppercase',
-                                                                            fontStyle: 'italic'
-                                                                        }}>
-                                                                            Card
-                                                                        </Typography>
-                                                                        <Box>
-                                                                            <Link href="#" sx={{
-                                                                                fontSize: '22px',
-                                                                                color: '#fff',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <AiOutlinePlus />
-                                                                            </Link>
-                                                                            <Link href="details" sx={{
-                                                                                fontSize: '20px',
-                                                                                color: '#fff',
-                                                                                marginLeft: '5px',
-                                                                                cursor: 'pointer'
-                                                                            }}>
-                                                                                <FiLink />
-                                                                            </Link>
-                                                                        </Box>
-                                                                    </Box>
-                                                                </Box>
-                                                                <Box>
-                                                                    <img src={ProImg8} alt="" className="ddff" />
-                                                                </Box>
+                                                                    <FiLink />
+                                                                </Link>
                                                             </Box>
                                                         </Box>
                                                     </Box>
                                                     <Box>
-
+                                                        <img src={ProImg1} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "80%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Card 2
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Card
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg4} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "91%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                App 3
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                App
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg6} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "80%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Card 3
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Card
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg8} alt="" />
+                                                    </Box>
+                                                </Box>
+                                            </Box>
+                                            <Box sx={{
+                                                width: '100%',
+                                                marginLeft: '12px'
+                                            }}>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "80%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Web 3
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Web
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg2} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "80%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                App 2
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                App
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg3} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "91%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Web 2
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Web
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg5} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "80%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Card 1
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Card
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg7} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: { sm: "88%" },
+                                                        height: { sm: "80%" },
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Web 3
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Web
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg9} alt="" />
                                                     </Box>
                                                 </Box>
                                             </Box>
                                         </Box>
+                                        <Box sx={{
+                                            display: { xl: 'none', lg: 'none', md: 'none', sm: 'none', xs: 'flex', }
+                                        }}>
+                                            <Box sx={{
+                                                width: '100%',
+                                            }}>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '90%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                App 1
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                App
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg1} alt="" />
+                                                    </Box>
 
-                                    </Grid>
-                                </Grid>
+                                                </Box>                                                    <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '83%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Web 3
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Web
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg2} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '83%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                App 2
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                App
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg3} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '83%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Card 2
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Card
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg4} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '92%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Web 2
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Web
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg5} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '92%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                App 3
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                App
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg6} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '83%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                App 1
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                App
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg7} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '83%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Card 1
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Card
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg8} alt="" />
+                                                    </Box>
+                                                </Box>
+                                                <Box sx={{
+                                                    position: 'relative',
+                                                    transition: 'transform .5s ease',
+                                                    marginTop: '30px'
+                                                }}>
+                                                    <Box sx={{
+                                                        position: 'absolute',
+                                                        padding: '20px',
+                                                        width: '90%',
+                                                        height: '83%',
+                                                        alignItems: 'end',
+                                                        display: 'flex',
+                                                        background: 'rgba(45, 64, 95, 0.6)',
+                                                        opacity: '0',
+                                                        transition: '.5s',
+                                                        "&:hover": {
+                                                            opacity: '1'
+                                                        }
+                                                    }}>
+                                                        <Box>
+                                                            <Typography sx={{
+                                                                fontSize: '20px',
+                                                                color: '#fff',
+                                                                fontWeight: '600',
+                                                                fontFamily: '"Krub", sans-serif',
+                                                                marginBottom: '8px'
+                                                            }}>
+                                                                Card 3
+                                                            </Typography>
+                                                            <Typography sx={{
+                                                                color: 'rgba(255, 255, 255, 0.7)',
+                                                                fontSize: '14px',
+                                                                textTransform: 'uppercase',
+                                                                fontStyle: 'italic'
+                                                            }}>
+                                                                Card
+                                                            </Typography>
+                                                            <Box>
+                                                                <Link href="#" sx={{
+                                                                    fontSize: '22px',
+                                                                    color: '#fff',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <AiOutlinePlus />
+                                                                </Link>
+                                                                <Link href="details" sx={{
+                                                                    fontSize: '20px',
+                                                                    color: '#fff',
+                                                                    marginLeft: '5px',
+                                                                    cursor: 'pointer'
+                                                                }}>
+                                                                    <FiLink />
+                                                                </Link>
+                                                            </Box>
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                        <img src={ProImg9} alt="" />
+                                                    </Box>
+                                                </Box>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                </Box>
                             </TabPanel>
                             <TabPanel value="2">
                                 <Box sx={{
@@ -698,8 +1800,8 @@ function Portfolio() {
                                                 <Box sx={{
                                                     position: 'absolute',
                                                     padding: '20px',
-                                                    width: '100%',
-                                                    height: '100%',
+                                                    width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                    height: { xl: "90%", lg: "90%", md: "85%", sm: "87%" },
                                                     alignItems: 'end',
                                                     display: 'flex',
                                                     background: 'rgba(45, 64, 95, 0.6)',
@@ -760,8 +1862,8 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                        height: { xl: "80%", lg: "80%", md: "74%", sm: "76%", xs: "79%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
@@ -825,13 +1927,14 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "30%", xs: "90%" },
+                                                        height: { xl: "93%", lg: "93%", md: "90%", sm: "87%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
                                                         opacity: '0',
                                                         transition: '.5s',
+                                                        marginLeft: { xl: "0%", lg: "0%", md: "0%", sm: "1%" },
                                                         "&:hover": {
                                                             opacity: '1'
                                                         }
@@ -899,8 +2002,8 @@ function Portfolio() {
                                                 <Box sx={{
                                                     position: 'absolute',
                                                     padding: '20px',
-                                                    width: '100%',
-                                                    height: '100%',
+                                                    width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                    height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                     alignItems: 'end',
                                                     display: 'flex',
                                                     background: 'rgba(45, 64, 95, 0.6)',
@@ -961,8 +2064,8 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                        height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
@@ -1024,13 +2127,14 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "42%", xs: "90%" },
+                                                        height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
                                                         opacity: '0',
                                                         transition: '.5s',
+                                                        marginLeft: { xl: "0%", lg: "0%", md: "0%", sm: "52%" },
                                                         "&:hover": {
                                                             opacity: '1'
                                                         }
@@ -1097,8 +2201,8 @@ function Portfolio() {
                                                 <Box sx={{
                                                     position: 'absolute',
                                                     padding: '20px',
-                                                    width: '100%',
-                                                    height: '100%',
+                                                    width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                    height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                     alignItems: 'end',
                                                     display: 'flex',
                                                     background: 'rgba(45, 64, 95, 0.6)',
@@ -1159,8 +2263,8 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                        height: { xl: "92%", lg: "92%", md: "90%", sm: "91%", xs: "92%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
@@ -1222,8 +2326,8 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                        height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',

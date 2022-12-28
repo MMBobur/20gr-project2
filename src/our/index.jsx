@@ -6,16 +6,16 @@ function Our() {
 
 
     const breakPoints = [
-        { width: 100, itemsToShow: 1, showArrows: false },
-        { width: 550, itemsToShow: 3, showArrows: false },
+        { width: 100, itemsToShow: 2, showArrows: false },
+        { width: 550, itemsToShow: 4, showArrows: false },
         { width: 768, itemsToShow: 6, showArrows: false },
         // { width: 1024, itemsToShow: 5, showArrows: false },
 
 
     ];
     return (
-        <Box>
-            <Box sx={{ textAlign: "center", }} >
+        <Box sx={{marginBottom:"80px"}}>
+            <Box sx={{ textAlign: "center",  }} >
                 <Typography sx={{
                     fontSize: "32px",
                     fontWeight: "bold",
@@ -44,8 +44,8 @@ function Our() {
 
                 <Box sx={{ mt: "50px", width: "95%" }}>
                     <Carousel breakPoints={breakPoints} enableAutoPlay={true} autoPlaySpeed={3500}  >
-                        {Client.map((v) => (
-                            <Box sx={{ width: "120px", }}>
+                        {Client.map((v,val) => (
+                            <Box key={val} sx={{ width: "120px", }}>
                                 <img src={v.rasm} alt="" style={{ width: "100%" }} />
                             </Box>
                         ))}

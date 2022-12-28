@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-// import Logo from "../../assets/img/logo.png"
 import "./style.css"
 import { Navbar } from './nav/index';
 import Link from '@mui/material/Link';
@@ -23,7 +22,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import Dropdown from 'react-bootstrap/Dropdown';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-function Navbar1() {
+function Nav() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
     const handleClose = () => setOpen(false);
@@ -31,24 +30,13 @@ function Navbar1() {
     const handleOpen = () => setOpen(true);
     const [age, setAge] = React.useState('');
 
-    const handleChange = (event) => {
-        setAge(event.target.value);
-    };
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
+  
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
         setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
     const [height, setHeight] = useState(0);
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -58,7 +46,7 @@ function Navbar1() {
     })
 
     return (
-        <Box>
+        <Box sx={{mb:"85px"}}>
             <AppBar position="fixed" sx={{
                 boxShadow: '0px 2px 15px rgb(0 0 0 / 10%)'
             }}>
@@ -83,7 +71,7 @@ function Navbar1() {
                             fontSize: "17px",
                             color: "#fff",
                         }}>
-                            {/* <BsClock /> */}
+                            
                         </Typography>
                         <Typography sx={{
                             fontSize: "16px",
@@ -97,7 +85,9 @@ function Navbar1() {
                     <Box sx={{
                         display: { xl: "flex", lg: "flex", md: "flex", sm: "flex", xs: "none" },
                         width: '100%',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        ml:{lg:"500px", md:"395px", sm:"245px", xl:"485px"},
+                        position:"absolute"
                     }}>
                         <Typography sx={{
 
@@ -117,7 +107,7 @@ function Navbar1() {
                                 color: "#5cb874"
                             }
                         }}>
-                            <span style={{ marginLeft: "15px" }}><BsFacebook /> </span>
+                            <Typography style={{ marginLeft: "15px" }}><BsFacebook /> </Typography>
                         </Typography>
                         <Typography sx={{
 
@@ -127,7 +117,7 @@ function Navbar1() {
                                 color: "#5cb874"
                             }
                         }}>
-                            <span style={{ marginLeft: "15px" }}><BsInstagram /></span>
+                            <Typography style={{ marginLeft: "15px" }}><BsInstagram /></Typography>
                         </Typography>
                         <Typography sx={{
 
@@ -137,14 +127,14 @@ function Navbar1() {
                                 color: "#5cb874"
                             }
                         }}>
-                            <span style={{ marginLeft: "15px" }}><AiFillLinkedin /></span>
+                            <Typography style={{ marginLeft: "15px" }}><AiFillLinkedin /></Typography>
                         </Typography>
 
                     </Box>
                 </Box>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters sx={{
-                        padding: { xl: "20px 110px", lg: "20px 80px", md: "0px 15px 0px 45px", sm: "15px 35px", xs: "15px 10px" },
+                        padding: { xl: "2px 110px", lg: "5px 80px", md: "0px 15px 0px 45px", sm: "2px 35px", xs: "2px 10px" },
                         height: { xl: '80px', lg: '80px', md: '80px', sm: '70px', xs: '70px' },
                         background: '#fff'
                     }}>
@@ -162,8 +152,8 @@ function Navbar1() {
                             padding: '0px',
                             alignItems: 'center'
                         }}>
-                            {Navbar.map((val) => (
-                                <Box>
+                            {Navbar.map((val, index) => (
+                                <Box key={index}>
                                     {
                                         val.ok ?
                                             <DropdownButton id="dropdown-basic-button" title="Drop Down">
@@ -185,7 +175,7 @@ function Navbar1() {
                                             </DropdownButton>
                                             :
                                             <Link className='hovnav' href={val.hr}
-                                                key={val}
+                                                
                                                 onClick={handleCloseNavMenu}
                                                 sx={{
                                                     my: 2,
@@ -216,10 +206,11 @@ function Navbar1() {
                             justifyContent: 'right'
                         }}>
                             <Box sx={{
-                                display: 'flex',
+                                display: { xl: "flex", lg: "flex", md: "flex", sm: "none", xs: "none" },
                                 justifyContent: 'right',
                             }}>
                                 <Button href='#make' sx={{
+
                                     background: '#FFF',
                                     height: '37px',
                                     padding: { xl: '8px 25px', lg: '8px 29px', md: '8px 10px !important', sm: '6px 12px', xs: '6px 12px' },
@@ -235,7 +226,7 @@ function Navbar1() {
                                     border: "2px solid #5cb874"
                                 }}>
                                     <Box sx={{
-                                        display: { xl: "flex", lg: "flex", md: "flex", sm: "flex", xs: "none" }
+                                        display: { xl: "flex", lg: "flex", md: "flex", sm: "none", xs: "none" }
                                     }}>Get Started</Box>
                                 </Button>
                             </Box>
@@ -290,8 +281,8 @@ function Navbar1() {
                             <AiOutlineClose />
                         </Box>
                     </Link>
-                    {Navbar.map((val) => (
-                        <Box>
+                    {Navbar.map((val, ind) => (
+                        <Box key={ind}>
                             {val.ok ?
 
                                 <DropdownButton id="dropdown-basic-button" title="Drop Down" >
@@ -313,8 +304,7 @@ function Navbar1() {
                                 </DropdownButton>
                                 :
                                 <Link className='hovnav' href={val.hr}
-                                    key={val}
-                                    // onClick={handleCloseNavMenu}
+                                    
                                     sx={{
                                         width: '100%',
                                         display: 'block',
@@ -337,4 +327,4 @@ function Navbar1() {
         </Box>
     );
 }
-export default Navbar1;
+export default Nav;

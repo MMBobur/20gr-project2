@@ -4,7 +4,7 @@ import { Teammap } from './mapp'
 
 function Team() {
     return (
-        <Box sx={{ background: "#f8fcf9" }}>
+        <Box sx={{ background: "#f8fcf9", p:"70px 0" }}>
             <Box sx={{ textAlign: "center", mt: "60px" }} >
                 <Typography sx={{
                     fontSize: "32px",
@@ -32,10 +32,10 @@ function Team() {
             </Box>
 
             <Box sx={{ display: "flex", justifyContent: "center", }}>
-                <Box sx={{ width: "87%", height: "auto", mt: "50px", }}>
+                <Box sx={{ width: {lg:"87%", md:"92%", sm:"92%", xs:"98%"}, height: "auto", mt: "50px", }}>
                     <Grid container spacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3, }} >
-                        {Teammap.map((v) => (
-                            <Grid item xs={4} gap={2} >
+                        {Teammap.map((v,val) => (
+                            <Grid key={val} item lg={4} md={4} sm={6} xs={12} sx={{display: "flex", justifyContent: "center",}}>
                                 <Box sx={{ width: "97%", height: "100%", background: "white", boxShadow: "0px 0px 12px 0px rgb(34 34 34 / 7%)", display: "flex", }}  >
                                     <Box sx={{
                                         display: "flex",
