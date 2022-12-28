@@ -4,7 +4,7 @@ import { Teammap } from './mapp'
 
 function Team() {
     return (
-        <Box sx={{ background: "#f8fcf9", p:"70px 0" }}>
+        <Box sx={{ background: "#f8fcf9", p: "70px 0" }}>
             <Box sx={{ textAlign: "center", mt: "60px" }} >
                 <Typography sx={{
                     fontSize: "32px",
@@ -32,60 +32,66 @@ function Team() {
             </Box>
 
             <Box sx={{ display: "flex", justifyContent: "center", }}>
-                <Box sx={{ width: {lg:"87%", md:"92%", sm:"92%", xs:"98%"}, height: "auto", mt: "50px", }}>
+                <Box sx={{ width: { lg: "87%", md: "92%", sm: "92%", xs: "98%" }, height: "auto", mt: "50px", }}>
                     <Grid container spacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3, }} >
-                        {Teammap.map((v,val) => (
-                            <Grid key={val} item lg={4} md={4} sm={6} xs={12} sx={{display: "flex", justifyContent: "center",}}>
-                                <Box sx={{ width: "97%", height: "100%", background: "white", boxShadow: "0px 0px 12px 0px rgb(34 34 34 / 7%)", display: "flex", }}  >
-                                    <Box sx={{
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        textAlign: "center",
-                                        padding: "15px"
-                                    }}>
-                                        <Box >
-                                            <Box sx={{ display: "flex", justifyContent: "center", }}>
-                                                <Typography sx={{ width: "200px", pt: "10px" }}>
+                        {Teammap.map((v, val) => (
 
-                                                    <img src={v.rasm} alt="" style={{ width: "100%", borderRadius: "50%" }} />
-                                                </Typography>
-                                            </Box>
-                                            <Typography sx={{ fontSize: "18px", mb: "2px", fontWeight: "700", fontFamily: '"Raleway", sans-serif', pt: "15px" }}>
-                                                {v.name}
-                                            </Typography>
-                                            <Typography sx={{ fontStyle: "italic", fontSize: "13px", pb: "15px" }}>
-                                                {v.last}
-                                            </Typography>
-                                            <Typography sx={{ fontSize: "14px", pt: "15px", fontStyle: "italic", color: "#aaa", padding: "0 15px" }}>
-                                                {v.text}
-                                            </Typography>
+                            <Grid key={val} item lg={4} md={4} sm={6} xs={12} sx={{ display: "flex", justifyContent: "center", }}>
 
-                                            <Box sx={{ display: "flex", justifyContent: "center", mt: "10px" }}>
+                                
 
-                                                <Typography sx={{ fontSize: "28px", mr: "10px", color: "#aaa", cursor: "pointer" }}>
-                                                    {v.twitter}
+                                    <Box sx={{ width: "97%", height: "100%", background: "white", boxShadow: "0px 0px 12px 0px rgb(34 34 34 / 7%)", display: "flex", }}  >
+                                        <Box sx={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            textAlign: "center",
+                                            padding: "15px"
+                                        }}>
+                                            <Box >
+                                                <Box sx={{ display: "flex", justifyContent: "center", }}>
+                                                    <Typography sx={{ width: "200px", pt: "10px" }}>
+
+                                                        <img src={v.rasm} alt="" style={{ width: "100%", borderRadius: "50%" }} />
+                                                    </Typography>
+                                                </Box>
+                                                <Typography sx={{ fontSize: "18px", mb: "2px", fontWeight: "700", fontFamily: '"Raleway", sans-serif', pt: "15px" }}>
+                                                    {v.name}
                                                 </Typography>
-                                                <Typography sx={{ fontSize: "25px", mr: "10px", color: "#aaa", cursor: "pointer" }}>
-                                                    {v.face}
+                                                <Typography sx={{ fontStyle: "italic", fontSize: "13px", pb: "15px" }}>
+                                                    {v.last}
                                                 </Typography>
-                                                <Typography sx={{ fontSize: "25px", mr: "10px", color: "#aaa", cursor: "pointer" }}>
-                                                    {v.ins}
-                                                </Typography>
-                                                <Typography sx={{ fontSize: "25px", p: "1", color: "#aaa", cursor: "pointer" }}>
-                                                    {v.link}
+                                                <Typography sx={{ fontSize: "14px", pt: "15px", fontStyle: "italic", color: "#aaa", padding: "0 15px" }}>
+                                                    {v.text}
                                                 </Typography>
 
+                                                <Box sx={{ display: "flex", justifyContent: "center", mt: "10px" }}>
+
+                                                    <Typography sx={{ fontSize: "28px", mr: "10px", color: "#aaa", cursor: "pointer" }}>
+                                                        {v.twitter}
+                                                    </Typography>
+                                                    <Typography sx={{ fontSize: "25px", mr: "10px", color: "#aaa", cursor: "pointer" }}>
+                                                        {v.face}
+                                                    </Typography>
+                                                    <Typography sx={{ fontSize: "25px", mr: "10px", color: "#aaa", cursor: "pointer" }}>
+                                                        {v.ins}
+                                                    </Typography>
+                                                    <Typography sx={{ fontSize: "25px", p: "1", color: "#aaa", cursor: "pointer" }}>
+                                                        {v.link}
+                                                    </Typography>
+
+                                                </Box>
                                             </Box>
                                         </Box>
                                     </Box>
-                                </Box>
+                               
                             </Grid>
+
                         ))}
                     </Grid>
                 </Box>
 
             </Box>
-        </Box>
+        </Box >
     )
 }
 

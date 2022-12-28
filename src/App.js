@@ -8,7 +8,7 @@ import Footer from "./pages/Footer";
 function App() {
   return (
     <>
-      <Nav/>
+      <Nav />
       <About />
       <Our />
       <Portfolio />
