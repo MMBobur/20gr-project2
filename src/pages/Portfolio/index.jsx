@@ -29,7 +29,7 @@ function Portfolio() {
     return (
         <>
             <Box sx={{
-                marginBottom:"50px"
+                marginBottom: "50px"
             }} id='portfolio'>
                 <Box>
                     <Box sx={{ justifyContent: "center", display: "flex" }}>
@@ -41,7 +41,7 @@ function Portfolio() {
 
                         <Typography sx={{ width: "120px", height: "2px", background: "#ddd", display: "flex", justifyContent: "center" }}> <Typography sx={{ width: "50px", height: "2px", background: "green", }}></Typography> </Typography>
                     </Box>
-                    <Box sx={{ display: "flex", justifyContent: "center",textAlign:"center" }}>
+                    <Box sx={{ display: "flex", justifyContent: "center", textAlign: "center" }}>
                         <Box sx={{ width: "87%", height: "auto", }}>
                             <Typography>
                                 Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
@@ -1862,8 +1862,8 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                        height: { xl: "80%", lg: "80%", md: "74%", sm: "76%", xs: "79%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
@@ -1927,13 +1927,14 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "30%", xs: "90%" },
+                                                        height: { xl: "93%", lg: "93%", md: "90%", sm: "87%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
                                                         opacity: '0',
                                                         transition: '.5s',
+                                                        marginLeft: { xl: "0%", lg: "0%", md: "0%", sm: "1%" },
                                                         "&:hover": {
                                                             opacity: '1'
                                                         }
@@ -2001,8 +2002,8 @@ function Portfolio() {
                                                 <Box sx={{
                                                     position: 'absolute',
                                                     padding: '20px',
-                                                    width: '100%',
-                                                    height: '100%',
+                                                    width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                    height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                     alignItems: 'end',
                                                     display: 'flex',
                                                     background: 'rgba(45, 64, 95, 0.6)',
@@ -2063,8 +2064,8 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                        height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
@@ -2126,13 +2127,14 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "42%", xs: "90%" },
+                                                        height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
                                                         opacity: '0',
                                                         transition: '.5s',
+                                                        marginLeft: { xl: "0%", lg: "0%", md: "0%", sm: "52%" },
                                                         "&:hover": {
                                                             opacity: '1'
                                                         }
@@ -2199,8 +2201,8 @@ function Portfolio() {
                                                 <Box sx={{
                                                     position: 'absolute',
                                                     padding: '20px',
-                                                    width: '100%',
-                                                    height: '100%',
+                                                    width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                    height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                     alignItems: 'end',
                                                     display: 'flex',
                                                     background: 'rgba(45, 64, 95, 0.6)',
@@ -2261,8 +2263,8 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                        height: { xl: "92%", lg: "92%", md: "90%", sm: "91%", xs: "92%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',
@@ -2324,8 +2326,8 @@ function Portfolio() {
                                                     <Box sx={{
                                                         position: 'absolute',
                                                         padding: '20px',
-                                                        width: '100%',
-                                                        height: '100%',
+                                                        width: { xl: "90%", lg: "90%", md: "86%", sm: "88%", xs: "90%" },
+                                                        height: { xl: "83%", lg: "83%", md: "77%", sm: "79%", xs: "82%" },
                                                         alignItems: 'end',
                                                         display: 'flex',
                                                         background: 'rgba(45, 64, 95, 0.6)',

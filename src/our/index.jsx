@@ -14,8 +14,8 @@ function Our() {
 
     ];
     return (
-        <Box>
-            <Box sx={{ textAlign: "center", }} >
+        <Box sx={{marginBottom:"80px"}}>
+            <Box sx={{ textAlign: "center",  }} >
                 <Typography sx={{
                     fontSize: "32px",
                     fontWeight: "bold",
