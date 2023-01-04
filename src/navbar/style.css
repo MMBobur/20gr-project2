@@ -1,0 +1,57 @@
+.css-19r6kue-MuiContainer-root{
+    padding: 0px!important;
+}
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input{
+    padding: 0 25px 0 0 !important;
+    border: none !important;
+    outline: none !important;
+}
+.btn-primary{
+    background-color: transparent !important;
+    font-size: 13px !important;
+    color: #626262 !important;
+    white-space: nowrap;
+    border: none !important;
+    margin-top: 17%;
+    font-weight: 550 !important;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif !important;
+    margin-left: 8%;
+}
+.hovIch{
+    font-weight: 550 !important;
+    color: #626262 !important;
+    font-size: 14px !important;
+    line-height: 28px;
+}
+.hovIch2{
+    font-weight: 550 !important;
+    color: #626262 !important;
+    font-size: 14px !important;
+    line-height: 28px;
+}
+.btn-primary {
+    margin-top: 0 !important;
+}
+.hovIch:hover{
+    color: #5cb874 !important;
+    cursor: pointer;
+}
+.hovnav:hover{
+    color:#5cb874 !important;
+    cursor: pointer;
+}
+.hovnav:focus{
+    color: #5cb874 !important;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: #5cb874 !important;
+    cursor: pointer;
+}
+.dropdown-item:active{
+    background-color: transparent !important;
+}
+#dropdown-basic-button .btn-primary{
+    font-size: 150px !important;
+}
