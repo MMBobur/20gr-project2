@@ -1,4 +1,6 @@
 import BANNER from "./Asilbek/BANNER/BANNER";
+import SERVICES from './Asilbek/SERVICES/SERVICES'
+
 import Nav from "./navbar";
 import About from "./pages/About";
 import Our from "./our";
@@ -11,6 +13,7 @@ function App() {
     <>      
       <Nav />
       <BANNER />
+      <SERVICES />
       <About />
       <Our />
       <Portfolio />
