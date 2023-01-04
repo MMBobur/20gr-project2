@@ -1,0 +1,172 @@
+#BanCarImg1{
+    background-image: url(../img/carusel1.jpg);
+    width: 100%;
+    height: 68vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#BanCarImg2{
+    background-image: url(../img/carusel2.jpg);
+    width: 100%;
+    height: 68vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#BanCarImg3{
+    background-image: url(../img/carusel3.jpg);
+    width: 100%;
+    height: 68vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.carousel-control-prev{
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 50px !important;
+    transition: 0.3s;
+    width: 54px !important;
+    height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 30px !important;
+    line-height: 0;
+    margin-top: 15%;
+    margin-left: 10px;
+}
+.carousel-control-next{
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 50px !important;
+    transition: 0.3s;
+    width: 54px !important;
+    height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 30px !important;
+    line-height: 0;
+    margin-top: 15%;
+    margin-right: 10px;
+}
+.carousel-indicators [data-bs-target] {
+    cursor: pointer !important;
+    background: #fff !important;
+    overflow: hidden !important;
+    border: 0 !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    opacity: 0.6;
+    transition: 0.3s !important;
+}
+.carousel-indicators .active{
+    background-color: #5cb874 !important
+}
+#BanCarYoz1{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif !important;
+}
+#BanCarYoz2{
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+    width: 80%;
+}
+#BanCarYoz3{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #fff;
+    animation-delay: 0.8s;
+    background: #5cb874;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+#BanCarYoz3:hover{
+    background: #6ec083;
+}
+#BanPasYoz1{
+    margin-bottom: 15px;
+    color: #5cb874;
+    font-size: 42px;
+}
+#BanPasYoz2{
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+}
+#BanPasYoz3{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    width: 95.8%;
+}
+
+@media screen and (max-width:1100px) {
+    #BanCarYoz2{
+        width: 85%;
+    }
+    .carousel-control-next{
+        margin-right: 0 !important;
+        margin-top: 19%;
+    }
+    .carousel-control-prev{
+        margin-left: 0 !important;
+        margin-top: 19%;
+    }
+}
+@media screen and (max-width:850px) {
+    #BanCarYoz2{
+        width: 80%;
+    }
+    #BanCarYoz1{
+        font-size: 28px;
+    }
+    .carousel-control-next{
+        margin-top: 32%;
+    }
+    .carousel-control-prev{
+        margin-top: 32%;
+    }
+    #BanCarImg1{
+        height: 85vh;
+    }
+    #BanCarImg2{
+        height: 85vh;
+    }
+    #BanCarImg3{
+        height: 85vh;
+    }
+}
+@media screen and (max-width:610px) {
+    #BanCarYoz2{
+        width: 69%;
+    }
+    .carousel-control-next{
+        margin-top: 50%;
+    }
+    .carousel-control-prev{
+        margin-top: 50%;
+    }
+    #BanCarYoz1{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
