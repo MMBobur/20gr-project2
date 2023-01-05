@@ -48,7 +48,7 @@ function Nav() {
     return (
         <Box sx={{mb:"85px"}}>
             <AppBar position="fixed" sx={{
-                boxShadow: '0px 2px 15px rgb(0 0 0 / 10%)'
+                boxShadow: '0px 2px 15px rgb(0 0 0 / 10%)' 
             }}>
                 <Box sx={{
                     display: "flex",
@@ -56,7 +56,7 @@ function Nav() {
                     height: height > 40 ? '0px' : '40px',
                     padding: { xl: "0px 110px", lg: "0px 80px", md: "0px 45px", sm: "0px 35px", xs: "0px" },
                     textAlign: { xl: "start", lg: "start", md: "start", sm: "start", xs: "center" },
-                    width: "100%",
+                    maxWidth:"100%" ,
                     justifyContent: { xl: "start", lg: "start", md: "start", sm: "start", xs: "center" },
                     alignItems: "center",
                     width: height > 40 ? '0px' : '100%'
@@ -85,8 +85,8 @@ function Nav() {
                     <Box sx={{
                         display: { xl: "flex", lg: "flex", md: "flex", sm: "flex", xs: "none" },
                         width: '100%',
-                        justifyContent: 'center',
-                        ml:{lg:"500px", md:"395px", sm:"245px", xl:"485px"},
+                        justifyContent:{lg:'center', xl:"center", sm:'center', xs:'center', md:'center'},
+                        ml:{lg:"500px", md:"365px", sm:"245px", xl:"1005px"},
                         position:"absolute"
                     }}>
                         <Typography sx={{
@@ -132,9 +132,9 @@ function Nav() {
 
                     </Box>
                 </Box>
-                <Container maxWidth="xl">
+                <Container maxWidth="100%">
                     <Toolbar disableGutters sx={{
-                        padding: { xl: "2px 110px", lg: "5px 80px", md: "0px 15px 0px 45px", sm: "2px 35px", xs: "2px 10px" },
+                        padding: { xl: "2px 110px", lg: "5px 80px", md: "0px 45px 0px 45px", sm: "2px 35px", xs: "2px 10px" },
                         height: { xl: '80px', lg: '80px', md: '80px', sm: '70px', xs: '70px' },
                         background: '#fff'
                     }}>
