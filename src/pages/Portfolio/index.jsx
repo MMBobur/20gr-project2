@@ -29,7 +29,7 @@ function Portfolio() {
     return (
         <>
             <Box sx={{
-                marginBottom: "50px"
+            p: "50px 0"
             }} id='portfolio'>
                 <Box>
                     <Box sx={{ justifyContent: "center", display: "flex" }}>

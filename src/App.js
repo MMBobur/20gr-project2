@@ -14,12 +14,12 @@ function App() {
     <>      
       <Nav />
       <BANNER />
-      <SERVICES />
-      <CONTACT />
       <About />
       <Our />
+      <SERVICES />
       <Portfolio />
       <Team />
+      <CONTACT />
       <Footer />
     </>
   );
