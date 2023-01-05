@@ -30,7 +30,7 @@ function Nav() {
     const handleOpen = () => setOpen(true);
     const [age, setAge] = React.useState('');
 
-  
+
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
@@ -46,9 +46,9 @@ function Nav() {
     })
 
     return (
-        <Box sx={{mb:"85px"}}>
+        <Box sx={{ mb: "85px" }}>
             <AppBar position="fixed" sx={{
-                boxShadow: '0px 2px 15px rgb(0 0 0 / 10%)' 
+                boxShadow: '0px 2px 15px rgb(0 0 0 / 10%)'
             }}>
                 <Box sx={{
                     display: "flex",
@@ -56,79 +56,82 @@ function Nav() {
                     height: height > 40 ? '0px' : '40px',
                     padding: { xl: "0px 110px", lg: "0px 80px", md: "0px 45px", sm: "0px 35px", xs: "0px" },
                     textAlign: { xl: "start", lg: "start", md: "start", sm: "start", xs: "center" },
-                    maxWidth:"100%" ,
+                    maxWidth: "100%",
                     justifyContent: { xl: "start", lg: "start", md: "start", sm: "start", xs: "center" },
                     alignItems: "center",
-                    width: height > 40 ? '0px' : '100%'
+                    width: "100%"
                 }}>
-                    <Box sx={{
-                        display: "flex",
-                        width: '100%',
-                        justifyContent: { xl: "start", lg: "start", md: "start", sm: "start", xs: "center" },
-                    }}>
-                        <Typography sx={{
-                            padding: '2px 5px 0px 0px',
-                            fontSize: "17px",
-                            color: "#fff",
-                        }}>
-                            
-                        </Typography>
-                        <Typography sx={{
-                            fontSize: "16px",
-                            fontWeight: "500",
-                            color: "#5cb874",
-                        }}>
-                            <BiEnvelope /> <span style={{ color: "grey" }}>info@example.com</span>   <BsFillPhoneFill /> <span style={{ color: "grey" }}>+1 5589 55488 55</span>
+                    <Box sx={{width:"100%", display:"flex"}}>
 
-                        </Typography>
-                    </Box>
-                    <Box sx={{
-                        display: { xl: "flex", lg: "flex", md: "flex", sm: "flex", xs: "none" },
-                        width: '100%',
-                        justifyContent:{lg:'center', xl:"center", sm:'center', xs:'center', md:'center'},
-                        ml:{lg:"500px", md:"365px", sm:"245px", xl:"1005px"},
-                        position:"absolute"
-                    }}>
-                        <Typography sx={{
-
-                            fontSize: "17px",
-                            color: "grey  ",
-                            "&:hover": {
-                                color: "#5cb874"
-                            }
+                        <Box sx={{
+                            display: "flex",
+                            width: {xl:'50%', lg:'50%',md:'50%',sm:'50%',xs:"100%"},
+                            justifyContent: { xl: "start", lg: "start", md: "start", sm: "start", xs: "center" },
                         }}>
-                            <BsTwitter />
-                        </Typography>
-                        <Typography sx={{
+                            <Typography sx={{
+                                padding: '2px 5px 0px 0px',
+                                fontSize: "17px",
+                                color: "#fff",
+                            }}>
 
-                            fontSize: "17px",
-                            color: "grey  ",
-                            "&:hover": {
-                                color: "#5cb874"
-                            }
-                        }}>
-                            <Typography style={{ marginLeft: "15px" }}><BsFacebook /> </Typography>
-                        </Typography>
-                        <Typography sx={{
+                            </Typography>
+                            <Typography sx={{
+                                fontSize: "16px",
+                                fontWeight: "500",
+                                color: "#5cb874",
+                            }}>
+                                <BiEnvelope /> <span style={{ color: "grey" }}>info@example.com</span>   <BsFillPhoneFill /> <span style={{ color: "grey" }}>+1 5589 55488 55</span>
 
-                            fontSize: "17px",
-                            color: "grey  ",
-                            "&:hover": {
-                                color: "#5cb874"
-                            }
+                            </Typography>
+                        </Box>
+                        <Box sx={{
+                            display: { xl: "flex", lg: "flex", md: "flex", sm: "flex", xs: "none" },
+                            width: {xl:"85.5%", lg:"88.5%", md:"91%", sm:"89%"},
+                            justifyContent: { lg: 'end', xl: "end", sm: 'end', xs: 'center', md: 'end' },
+                            // ml: { lg: "500px", md: "365px", sm: "245px", xl: "1005px" },
+                            position: "absolute",
                         }}>
-                            <Typography style={{ marginLeft: "15px" }}><BsInstagram /></Typography>
-                        </Typography>
-                        <Typography sx={{
+                            <Typography sx={{
 
-                            fontSize: "17px",
-                            color: "grey  ",
-                            "&:hover": {
-                                color: "#5cb874"
-                            }
-                        }}>
-                            <Typography style={{ marginLeft: "15px" }}><AiFillLinkedin /></Typography>
-                        </Typography>
+                                fontSize: "17px",
+                                color: "grey  ",
+                                "&:hover": {
+                                    color: "#5cb874"
+                                }
+                            }}>
+                                <BsTwitter />
+                            </Typography>
+                            <Typography sx={{
+
+                                fontSize: "17px",
+                                color: "grey  ",
+                                "&:hover": {
+                                    color: "#5cb874"
+                                }
+                            }}>
+                                <Typography style={{ marginLeft: "15px" }}><BsFacebook /> </Typography>
+                            </Typography>
+                            <Typography sx={{
+
+                                fontSize: "17px",
+                                color: "grey  ",
+                                "&:hover": {
+                                    color: "#5cb874"
+                                }
+                            }}>
+                                <Typography style={{ marginLeft: "15px" }}><BsInstagram /></Typography>
+                            </Typography>
+                            <Typography sx={{
+
+                                fontSize: "17px",
+                                color: "grey  ",
+                                "&:hover": {
+                                    color: "#5cb874"
+                                }
+                            }}>
+                                <Typography style={{ marginLeft: "15px" }}><AiFillLinkedin /></Typography>
+                            </Typography>
+                        </Box>
 
                     </Box>
                 </Box>
@@ -175,7 +178,7 @@ function Nav() {
                                             </DropdownButton>
                                             :
                                             <Link className='hovnav' href={val.hr}
-                                                
+
                                                 onClick={handleCloseNavMenu}
                                                 sx={{
                                                     my: 2,
@@ -304,7 +307,7 @@ function Nav() {
                                 </DropdownButton>
                                 :
                                 <Link className='hovnav' href={val.hr}
-                                    
+
                                     sx={{
                                         width: '100%',
                                         display: 'block',
