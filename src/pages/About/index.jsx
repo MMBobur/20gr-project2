@@ -6,24 +6,31 @@ function About() {
     return (
         <Box sx={{ p: "60px 0", justifyContent: "center" }} id='about'>
             <Box>
-                <Box>
-                    <Box sx={{ justifyContent: "center", display: "flex" }}>
-                        <Typography sx={{ fontSize: "32px ", fontWeight: "bold", textTransform: "uppercase", mb: "15px", position: "relative" }}>
-                            ABOUT US
-                        </Typography>
-                    </Box>
-                    <Box sx={{ justifyContent: "center", display: "flex" }}>
-                        <Typography sx={{ width: "120px", height: "1px", background: "#ddd", position: "absolute" }}></Typography>
-                    </Box>
-                    <Box sx={{ justifyContent: "center", display: "flex" }}>
-                        <Typography sx={{ width: "40px", height: "3px", background: "#5cb874", position: "absolute", top: "-1px" }}></Typography>
-                    </Box>
-                    <Box>
-                        <Typography sx={{ textAlign: "center", m: { lg: "15px 59px", md: "15px 23.5px", sm: "15px 15px", xs: "15px 10px" }, color: "#000", color: "#3A3A3A", }}>
+            <Box sx={{ textAlign: "center",  }} >
+                <Typography sx={{
+                    fontSize: "32px",
+                    fontWeight: "bold",
+                    textTransform: "uppercase",
+                    mb: "20px",
+                    // pb:"20px",
+                    fontFamily: '"Raleway", sans-serif'
+                }}>
+                    ABOUT US
+                </Typography>
+                <Box sx={{ display: "flex", justifyContent: "center", mb: "30px" }}>
+
+                    <Typography sx={{ width: "120px", height: "2px", background: "#ddd", display: "flex", justifyContent: "center" }}> <Typography sx={{ width: "50px", height: "2px", background: "green", }}></Typography> </Typography>
+                </Box>
+
+                <Box sx={{ display: "flex", justifyContent: "center" }}>
+
+                    <Box sx={{ width: "89%", height: "auto",}}>
+                        <Typography>
                             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
                         </Typography>
                     </Box>
                 </Box>
+            </Box>
                 <Box sx={{ justifyContent: "center", display: "flex", width: "100%" }}>
                     <Grid container spacing={2} sx={{ mt: "1.2%", width: "90%" }}>
                         <Grid item lg={6} md={6} sm={12} xs={12}>
