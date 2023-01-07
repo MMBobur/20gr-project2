@@ -6,6 +6,8 @@
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    display: flex;
+    justify-content: center !important;
 }
 #BanCarImg2{
     background-image: url(../img/carusel2.jpg);

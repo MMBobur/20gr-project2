@@ -15,7 +15,8 @@ function BANNER() {
                             width: '100%',
                             height: '100%',
                             display: 'flex',
-                            alignItems: 'center'
+                            alignItems: 'center',
+                            justifyContent:'center'
                         }}>
                             <Box>
                                 <Typography id='BanCarYoz1'>
@@ -36,7 +37,8 @@ function BANNER() {
                             width: '100%',
                             height: '100%',
                             display: 'flex',
-                            alignItems: 'center'
+                            alignItems: 'center',
+                            justifyContent:'center'
                         }}>
                             <Box>
                                 <Typography id='BanCarYoz1'>
@@ -57,7 +59,8 @@ function BANNER() {
                             width: '100%',
                             height: '100%',
                             display: 'flex',
-                            alignItems: 'center'
+                            alignItems: 'center',
+                            justifyContent:'center'
                         }}>
                             <Box>
                                 <Typography id='BanCarYoz1'>
